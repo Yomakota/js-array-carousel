@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* COMMONS */
+
+ul {
+    list-style-type: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: rgba(24, 23, 23, 0.075);
+}
+
+.active {
+    display: block!important;
+}
+
+.select {
+    border: 2px solid white;
+}
+
+/* CONTAINER */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* SLIDER */
+
+.container .slider {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 500px;
+}
+
+.container .slider .main-slide {
+    width: 80%;
+}
+
+.container .slider .main-slide .slide {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.container .slider .main-slide .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.container .slider .main-slide .slide .img-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: white;
+    padding: 3em;
+}
+
+/* THUMBNAILS */
+
+.container .slider .thumbnails {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.container .slider .thumbnails .thumb-img {
+    height: 20%;
+}
+
+.container .slider .thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* THUMBNAILS-BTN */
+
+.container .slider .thumbnails .btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 0 .2em;
+    cursor: pointer;
+}
+
+.container .slider .thumbnails .prev {
+    top: 10px;
+}
+
+.container .slider .thumbnails .next {
+   bottom: 10px;
+}
